@@ -1,0 +1,31 @@
+// Post
+POST http://localhost:3000/subscribers/
+Content-Type: application/json
+
+{
+  "name":"MArya",
+  "subscriberToChannel":"abc"
+}
+
+#####
+
+// GET all
+GET http://localhost:3000/subscribers/
+
+
+#######
+// GET by id
+GET http://localhost:3000/subscribers/64e295c8e31356c6f6dda467
+
+#######
+// Delete 
+DELETE  http://localhost:3000/subscribers/64e295c8e31356c6f6dda465
+
+####
+PATCH  http://localhost:3000/subscribers/64e295c8e31356c6f6dda467
+Content-Type: application/json
+
+{
+  "name":"Maghy",
+  "subscriberToChannel":"abc"
+}
